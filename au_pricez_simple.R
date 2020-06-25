@@ -17,5 +17,5 @@ hist(all$PRICE)
 
 #Price plot
 ggplot(data=all[!is.na(all$PRICE),], aes(x = DATE, y = PRICE))+
-  geom_point(color = 'blue') + geom_smooth(method = "lm", se = FALSE, color = 'black', aes(group = 1)) +
-  scale_y_continuous(breaks= seq(0, 2000, by=100))
+  geom_point(color = 'blue') + geom_smooth(method = 'lm', se = FALSE, color = 'black', aes(group = 1)) +
+  scale_y_continuous(breaks = seq(0, 2000, by=100))
