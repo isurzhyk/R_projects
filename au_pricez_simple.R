@@ -1,10 +1,11 @@
 all <- AU_PRICEZ
-dim(all)              #Show the size of the table
-data_size <- dim(all) #Create a variable with dimensions of the data table
-data_size[2]          #Display the second element of data_size matrix
-head(all)             #Show first few rows of the data
-names(all)            #Display the variables in the data set
-mean(all$SalePrice)   #Get the average price
+
+dim(all)
+data_size <- dim(all)
+
+head(all)
+names(all)
+mean(all$PRICE)
 
 quantile(all$PRICE)
 
